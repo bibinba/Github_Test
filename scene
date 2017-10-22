@@ -8,6 +8,12 @@ using UnityEngine.SceneManagement;
 
 あああああああああああ
 
+#####################################################
+
+branch2ように書き加えたよ〜〜〜〜〜〜
+
+ハッスルハッスル！マッスルマッスル！
+
 
 public class scene : MonoBehaviour {
 	/// <summary>
