@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class scene : MonoBehaviour {
+	/// <summary>
+	/// /ドアと自分の位置の距離で、シーン遷移を判定するスクリプト
+	/// </summary>
+	public GameObject me;
+	public GameObject doorgun;//ガンシュミレーター
+	public GameObject doorkare;/// VR彼氏のどあ
+	/// Start this instance.
+	/// </summary>
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		Vector3 Mepos = me.transform.position;
+
+		Vector3 Gunpos = doorgun.transform.position;
+		float disgun = Vector3.Distance(Mepos,Gunpos);///銃との距離
+		if (disgun < 1) {
+			SceneManager.LoadScene("gun");
+		}
+
+		Vector3 Karepos = doorkare.transform.position;
+		float diskare = Vector3.Distance(Mepos,Karepos);///彼との距離
+		Debug.Log("Distance : " + diskare);
+		if (diskare < 1) {
+			SceneManager.LoadScene ("karepip");
+		}
+	}
+}
