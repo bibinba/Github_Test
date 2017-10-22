@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+ブランチ切ったよ〜〜〜〜〜〜〜
+
+
+あああああああああああ
+
+
 public class scene : MonoBehaviour {
 	/// <summary>
 	/// /ドアと自分の位置の距離で、シーン遷移を判定するスクリプト
