@@ -19,8 +19,7 @@ public class scene : MonoBehaviour {
 	public GameObject me;
 	public GameObject doorgun;//ガンシュミレーター
 	public GameObject doorkare;/// VR彼氏のどあ
-	/// Start this instance.
-	/// </summary>
+	
 	// Use this for initialization
 	void Start () {
 		
